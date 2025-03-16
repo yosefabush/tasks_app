@@ -149,7 +149,7 @@ class _TaskDetailScreenState extends State<TaskDetailScreen> {
       );
     }
     
-    final isWideScreen = MediaQuery.of(context).size.width > 600;
+    //final isWideScreen = MediaQuery.of(context).size.width > 600;
     
     return Scaffold(
       appBar: AppBar(
@@ -262,9 +262,9 @@ class _TaskDetailScreenState extends State<TaskDetailScreen> {
                 });
               },
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text('Low'),
                 Text('Medium'),
                 Text('High'),
